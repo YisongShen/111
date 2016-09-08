@@ -1,0 +1,144 @@
+I, [2016-08-29T08:43:01.769113 #1]  INFO -- : Refreshing Gem list
+ActiveRecord::AdapterNotSpecified: 'production' database is not configured. Available: ["default", "development", "test"]
+  /usr/local/bundle/gems/activerecord-4.2.5.1/lib/active_record/connection_adapters/connection_specification.rb:248:in `resolve_symbol_connection'
+  /usr/local/bundle/gems/activerecord-4.2.5.1/lib/active_record/connection_adapters/connection_specification.rb:211:in `resolve_connection'
+  /usr/local/bundle/gems/activerecord-4.2.5.1/lib/active_record/connection_adapters/connection_specification.rb:139:in `resolve'
+  /usr/local/bundle/gems/activerecord-4.2.5.1/lib/active_record/connection_adapters/connection_specification.rb:169:in `spec'
+  /usr/local/bundle/gems/activerecord-4.2.5.1/lib/active_record/connection_handling.rb:50:in `establish_connection'
+  /usr/local/bundle/gems/activerecord-4.2.5.1/lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+  /usr/local/bundle/gems/activesupport-4.2.5.1/lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  /usr/local/bundle/gems/activesupport-4.2.5.1/lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  /usr/local/bundle/gems/activesupport-4.2.5.1/lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  /usr/local/bundle/gems/activesupport-4.2.5.1/lib/active_support/lazy_load_hooks.rb:44:in `each'
+  /usr/local/bundle/gems/activesupport-4.2.5.1/lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  /usr/local/bundle/gems/activerecord-4.2.5.1/lib/active_record/base.rb:315:in `<module:ActiveRecord>'
+  /usr/local/bundle/gems/activerecord-4.2.5.1/lib/active_record/base.rb:26:in `<top (required)>'
+  /usr/local/bundle/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:274:in `require'
+  /usr/local/bundle/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:274:in `block in require'
+  /usr/local/bundle/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+  /usr/local/bundle/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:274:in `require'
+  /usr/local/bundle/gems/activerecord-4.2.5.1/lib/active_record/relation/predicate_builder.rb:121:in `<class:PredicateBuilder>'
+  /usr/local/bundle/gems/activerecord-4.2.5.1/lib/active_record/relation/predicate_builder.rb:2:in `<module:ActiveRecord>'
+  /usr/local/bundle/gems/activerecord-4.2.5.1/lib/active_record/relation/predicate_builder.rb:1:in `<top (required)>'
+  /usr/local/bundle/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:274:in `require'
+  /usr/local/bundle/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:274:in `block in require'
+  /usr/local/bundle/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+  /usr/local/bundle/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:274:in `require'
+  /usr/local/bundle/gems/activesupport-4.2.5.1/lib/active_support/dependencies/autoload.rb:70:in `block in eager_load!'
+  /usr/local/bundle/gems/activesupport-4.2.5.1/lib/active_support/dependencies/autoload.rb:70:in `each_value'
+  /usr/local/bundle/gems/activesupport-4.2.5.1/lib/active_support/dependencies/autoload.rb:70:in `eager_load!'
+  /usr/local/bundle/gems/activerecord-4.2.5.1/lib/active_record.rb:160:in `eager_load!'
+  /usr/local/bundle/gems/railties-4.2.5.1/lib/rails/application/finisher.rb:56:in `each'
+  /usr/local/bundle/gems/railties-4.2.5.1/lib/rails/application/finisher.rb:56:in `block in <module:Finisher>'
+  /usr/local/bundle/gems/railties-4.2.5.1/lib/rails/initializable.rb:30:in `instance_exec'
+  /usr/local/bundle/gems/railties-4.2.5.1/lib/rails/initializable.rb:30:in `run'
+  /usr/local/bundle/gems/railties-4.2.5.1/lib/rails/initializable.rb:55:in `block in run_initializers'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:228:in `block in tsort_each'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:431:in `each_strongly_connected_component_from'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:349:in `block in each_strongly_connected_component'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:347:in `each'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:347:in `call'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:347:in `each_strongly_connected_component'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:226:in `tsort_each'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:205:in `tsort_each'
+  /usr/local/bundle/gems/railties-4.2.5.1/lib/rails/initializable.rb:54:in `run_initializers'
+  /usr/local/bundle/gems/railties-4.2.5.1/lib/rails/application.rb:352:in `initialize!'
+  /var/www/docker_example/config/environment.rb:5:in `<top (required)>'
+  config.ru:4:in `require'
+  config.ru:4:in `block in <main>'
+  /usr/local/bundle/gems/rack-1.6.4/lib/rack/builder.rb:55:in `instance_eval'
+  /usr/local/bundle/gems/rack-1.6.4/lib/rack/builder.rb:55:in `initialize'
+  config.ru:1:in `new'
+  config.ru:1:in `<main>'
+  /usr/local/bundle/gems/unicorn-5.0.1/lib/unicorn.rb:46:in `eval'
+  /usr/local/bundle/gems/unicorn-5.0.1/lib/unicorn.rb:46:in `block in builder'
+  /usr/local/bundle/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:752:in `build_app!'
+  /usr/local/bundle/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:129:in `start'
+  /usr/local/bundle/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+  /usr/local/bundle/bin/unicorn:17:in `load'
+  /usr/local/bundle/bin/unicorn:17:in `<top (required)>'
+ArgumentError: Already running on PID:1 (or pid=/var/www/docker_example/tmp/pids/unicorn.pid is stale)
+  /usr/local/bundle/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid='
+  /usr/local/bundle/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+  /usr/local/bundle/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+  /usr/local/bundle/bin/unicorn:17:in `load'
+  /usr/local/bundle/bin/unicorn:17:in `<top (required)>'
+ArgumentError: Already running on PID:1 (or pid=/var/www/docker_example/tmp/pids/unicorn.pid is stale)
+  /usr/local/bundle/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid='
+  /usr/local/bundle/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+  /usr/local/bundle/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+  /usr/local/bundle/bin/unicorn:17:in `load'
+  /usr/local/bundle/bin/unicorn:17:in `<top (required)>'
+ArgumentError: Already running on PID:1 (or pid=/var/www/docker_example/tmp/pids/unicorn.pid is stale)
+  /usr/local/bundle/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid='
+  /usr/local/bundle/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+  /usr/local/bundle/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+  /usr/local/bundle/bin/unicorn:17:in `load'
+  /usr/local/bundle/bin/unicorn:17:in `<top (required)>'
+ArgumentError: Already running on PID:1 (or pid=/var/www/docker_example/tmp/pids/unicorn.pid is stale)
+  /usr/local/bundle/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid='
+  /usr/local/bundle/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+  /usr/local/bundle/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+  /usr/local/bundle/bin/unicorn:17:in `load'
+  /usr/local/bundle/bin/unicorn:17:in `<top (required)>'
+ArgumentError: Already running on PID:1 (or pid=/var/www/docker_example/tmp/pids/unicorn.pid is stale)
+  /usr/local/bundle/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid='
+  /usr/local/bundle/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+  /usr/local/bundle/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+  /usr/local/bundle/bin/unicorn:17:in `load'
+  /usr/local/bundle/bin/unicorn:17:in `<top (required)>'
+I, [2016-08-29T08:54:04.079635 #1]  INFO -- : Refreshing Gem list
+I, [2016-08-29T08:54:05.140225 #1]  INFO -- : listening on addr=0.0.0.0:3000 fd=11
+I, [2016-08-29T08:54:05.152927 #1]  INFO -- : master process ready
+I, [2016-08-29T08:54:05.154046 #6]  INFO -- : worker=0 ready
+I, [2016-08-29T08:55:18.081375 #1]  INFO -- : reaped #<Process::Status: pid 6 exit 0> worker=0
+I, [2016-08-29T08:55:18.081551 #1]  INFO -- : master complete
+I, [2016-08-29T08:55:31.542393 #1]  INFO -- : Refreshing Gem list
+I, [2016-08-29T08:55:32.562603 #1]  INFO -- : listening on addr=0.0.0.0:3000 fd=11
+I, [2016-08-29T08:55:32.576547 #1]  INFO -- : master process ready
+I, [2016-08-29T08:55:32.577646 #6]  INFO -- : worker=0 ready
+I, [2016-08-29T08:57:07.767907 #1]  INFO -- : reaped #<Process::Status: pid 6 exit 0> worker=0
+I, [2016-08-29T08:57:07.768089 #1]  INFO -- : master complete
+I, [2016-08-29T08:58:02.113054 #1]  INFO -- : Refreshing Gem list
+I, [2016-08-29T08:58:03.195927 #1]  INFO -- : listening on addr=0.0.0.0:3000 fd=11
+I, [2016-08-29T08:58:03.207735 #1]  INFO -- : master process ready
+I, [2016-08-29T08:58:03.209007 #6]  INFO -- : worker=0 ready
+I, [2016-08-29T08:58:59.363255 #1]  INFO -- : reaped #<Process::Status: pid 6 exit 0> worker=0
+I, [2016-08-29T08:58:59.363372 #1]  INFO -- : master complete
+I, [2016-08-29T08:59:11.581240 #1]  INFO -- : Refreshing Gem list
+I, [2016-08-29T08:59:12.582810 #1]  INFO -- : listening on addr=0.0.0.0:3000 fd=11
+I, [2016-08-29T08:59:12.602283 #1]  INFO -- : master process ready
+I, [2016-08-29T08:59:12.603491 #6]  INFO -- : worker=0 ready
+I, [2016-08-29T09:06:45.250294 #1]  INFO -- : reaped #<Process::Status: pid 6 exit 0> worker=0
+I, [2016-08-29T09:06:45.250432 #1]  INFO -- : master complete
+I, [2016-08-29T09:06:59.684817 #1]  INFO -- : Refreshing Gem list
+I, [2016-08-29T09:07:01.638610 #1]  INFO -- : listening on addr=0.0.0.0:3000 fd=11
+I, [2016-08-29T09:07:01.650490 #1]  INFO -- : master process ready
+I, [2016-08-29T09:07:01.651687 #6]  INFO -- : worker=0 ready
+I, [2016-08-29T09:15:11.557326 #1]  INFO -- : reaped #<Process::Status: pid 6 exit 0> worker=0
+I, [2016-08-29T09:15:11.557670 #1]  INFO -- : master complete
+I, [2016-08-29T09:15:20.571226 #1]  INFO -- : Refreshing Gem list
+I, [2016-08-29T09:15:21.622977 #1]  INFO -- : listening on addr=0.0.0.0:3000 fd=11
+I, [2016-08-29T09:15:21.635373 #1]  INFO -- : master process ready
+I, [2016-08-29T09:15:21.636616 #6]  INFO -- : worker=0 ready
+I, [2016-08-29T09:17:17.151425 #1]  INFO -- : reaped #<Process::Status: pid 6 exit 0> worker=0
+I, [2016-08-29T09:17:17.151609 #1]  INFO -- : master complete
+I, [2016-08-29T09:17:36.947335 #1]  INFO -- : Refreshing Gem list
+I, [2016-08-29T09:17:38.762559 #1]  INFO -- : listening on addr=0.0.0.0:3000 fd=11
+I, [2016-08-29T09:17:38.774010 #1]  INFO -- : master process ready
+I, [2016-08-29T09:17:38.775104 #6]  INFO -- : worker=0 ready
+I, [2016-08-29T16:12:41.150641 #1]  INFO -- : reaped #<Process::Status: pid 6 exit 0> worker=0
+I, [2016-08-29T16:12:41.151074 #1]  INFO -- : master complete
+I, [2016-08-29T21:56:30.109864 #1]  INFO -- : Refreshing Gem list
+I, [2016-08-29T21:56:32.092428 #1]  INFO -- : listening on addr=0.0.0.0:3000 fd=11
+I, [2016-08-29T21:56:32.106839 #1]  INFO -- : master process ready
+I, [2016-08-29T21:56:32.108086 #6]  INFO -- : worker=0 ready
+I, [2016-08-30T00:19:39.761876 #1]  INFO -- : reaped #<Process::Status: pid 6 exit 0> worker=0
+I, [2016-08-30T00:19:39.767112 #1]  INFO -- : master complete
+I, [2016-09-07T09:46:36.781144 #1]  INFO -- : Refreshing Gem list
+I, [2016-09-07T09:46:38.512758 #1]  INFO -- : listening on addr=0.0.0.0:3000 fd=11
+I, [2016-09-07T09:46:38.573799 #1]  INFO -- : master process ready
+I, [2016-09-07T09:46:38.574819 #6]  INFO -- : worker=0 ready
+I, [2016-09-08T05:58:13.676644 #1]  INFO -- : reaped #<Process::Status: pid 6 exit 0> worker=0
+I, [2016-09-08T05:58:13.676734 #1]  INFO -- : master complete
